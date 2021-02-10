@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Make by Yurii Kucher -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        html {
+            font-family: Geneva, Arial, Helvetica, sans-serif;
+            font-size: smaller;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <h1>Order Form</h1>
+        <fieldset>
+            <legend>General Info</legend>
+            <p>
+                <label>Email<br><input type="email" placeholder="Email" name="Email"></label>
+            </p>
+            <p>
+                <label>Login<br><input type="text" placeholder="Login" name="Login"></label>
+            </p>
+            <p>
+                <label>Password<br><input type="password" placeholder="Password" name="Password"></label>
+            </p>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>User Info</legend>
+            <p>
+                <label>Name<br><input type="text" placeholder="name" name="name"></label>
+            </p>
+            <p>
+                <label>Surname<br><input type="text" placeholder="Surname" name="surname"></label>
+            </p>
+            <p>
+                Gender:
+                <label>male<input type="radio" value="male" name="gender"></label>
+                <label>female<input type="radio" value="female" name="gender"></label>
+            </p>
+            <p>
+                <label>Age<br><input type="number" placeholder="Age" name="age" min="0" max="100"></label>
+            </p>
+            <p>
+                <label>Tell us about something:<br><textarea name="about" rows="6" cols="30"></textarea></label>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Order Info</legend>
+            <select name="Phone">
+                <option value="" selected disabled hidden>Select option</option>
+                <option value="iphone-11" label="iPhone 11"></option>
+                <option value="iphone-12" label="iPhone 12"></option>
+                <option value="iphone-13" label="iPhone 13"></option>
+                <option value="iphone-14" label="iPhone 14"></option>
+                <option value="iphone-15" label="iPhone 15"></option>
+            </select>
+            <p>
+                <label>Color: <input type="color" name="color" value="#c5c5c5"></label>
+            </p>
+            <p>
+                <label>Amount<br><input type="number" placeholder="Amount" name="amount" min="1" max="100"></label>
+            </p>
+            <p>
+                <label>Delivery date<br><input type="date" name="delivery-date"></label>
+            </p>
+            <p>
+                Extra:
+                <label>Warantly<input type="checkbox" name="warantly"></label>
+                <label>Earphones<input type="checkbox" name="earphones"></label>
+                <label>Screen protector<input type="checkbox" name="screen-protector"></label>
+            </p>
+        </fieldset>
+        <input type="reset" value="Reset data" />
+        <input type="submit" value="Send data" />
+        <p>&nbsp;</p>
+    </form>
+</body>
+
+</html>

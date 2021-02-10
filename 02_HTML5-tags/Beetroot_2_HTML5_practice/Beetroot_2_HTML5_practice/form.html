@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="#" method="GET">
+      <fieldset>
+        <legend>User info</legend>
+
+        <label
+          >Name
+          <br />
+          <input type="text" placeholder="Name" />
+        </label>
+        <br />
+        <br />
+
+        <label
+          >Surname
+          <br />
+          <input type="text" placeholder="Surname" required />
+        </label>
+        <br />
+
+        <p>
+          Gender:
+          <label>male <input type="radio" name="gender" /> </label>
+          <label>female <input type="radio" name="gender" /> </label>
+          <br />
+          <br />
+        </p>
+
+        <label
+          >Age
+          <br />
+          <input type="number" placeholder="Age" min="0" required />
+        </label>
+        <br />
+        <br />
+
+        <label
+          >Tell us about something:
+          <br />
+          <textarea rows="10" cols="40"></textarea>
+        </label>
+        <br />
+      </fieldset>
+      <fieldset>
+        <legend>Order info</legend>
+
+        <label>
+          Phone to select:
+          <br />
+          <!-- "name=samsungs20" -->
+          <select name="phone">
+            <option value="" selected disabled hidden>Select option</option>
+            <!-- <option value="hidden" hidden>Select option</option> -->
+            <option value="iphone11">iPhone 11</option>
+            <option value="samsungs20">Samsung S20</option>
+            <option value="nokia3310">Nokia 3310</option>
+          </select>
+        </label>
+        <br />
+        <br />
+
+        <label
+          >Color
+          <br />
+          <input type="color" value="#189334" name="color" />
+        </label>
+        <br />
+        <br />
+
+        <label
+          >Color
+          <br />
+          <input
+            name="date"
+            type="date"
+            min="1999-10-23"
+            max="2020-01-01"
+            required
+          />
+        </label>
+      </fieldset>
+      <input type="submit" value="Submit data" />
+      <input type="reset" value="Reset data" />
+    </form>
+  </body>
+</html>
